@@ -10,5 +10,5 @@ COPY . /app
 
 WORKDIR /
 
-CMD flask --app app run -h 0.0.0.0 -p 80
+CMD flask --app app run -h 0.0.0.0 -p $PORT
 
