@@ -8,5 +8,7 @@ RUN python -m pip install -r requirements.txt
 
 COPY . /app
 
-CMD flask --app my_api run -h 0.0.0.0 -p 80
+WORKDIR /
+
+CMD flask --app app run -h 0.0.0.0 -p 80
 
